@@ -1,0 +1,12 @@
+/* Essas são as variáveis para usar no site e ficar mais escalável a edição das coisas */
+:root {
+  --cor-branco: #FFFFFF;
+  --cor-preto: #3E4095;
+  --cor-primaria: #3a3ca5;
+  --cor-secundaria-1: #232568;
+  --cor-secundaria-2: #61B6DE;
+  --cor-secundaria-3: #3A75D6;
+  --cor-secundaria-4: #232568;
+  --regular: 'bellotatext-bold';
+  --bold: 'staatliches-regular';
+}

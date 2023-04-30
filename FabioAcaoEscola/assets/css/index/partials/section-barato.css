@@ -1,0 +1,162 @@
+/* <section class="barato"> */
+section.barato {
+  background-color: var(--cor-secundaria-1);
+}
+/* Titulo */
+section.barato .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 200px 20px 100px 20px;
+  width: 100%;
+}
+section.barato .titulo h2 {
+  font-family: var(--bold);
+  font-size: 50px;
+  color: var(--cor-branco);
+  width: 100%;
+  max-width: 800px;
+}
+section.barato .titulo h2 span {
+  color: var(--cor-primaria);
+}
+section.barato .titulo p {
+  font-family: var(--regular);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--cor-branco);
+  padding: 20px 000;
+  width: 100%;
+  max-width: 600px;
+  line-height: 1.5;
+}
+/* Imagem */
+section.barato .imagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 350px;
+  max-height: 350px;
+  height: 350px;
+  position: relative;
+  background: radial-gradient(circle at 70%,var(--cor-primaria) 10%,var(--cor-secundaria-3) 30%);
+  background-size: 400% 400%;
+  animation: mexendoBackground 15s ease-in-out infinite;
+}
+@keyframes mexendoBackground {
+  0% {
+    background-position: 50% 30%
+  }
+  25% {
+    background-position: 100% 10%
+  }
+  50% {
+    background-position: 100% 90%
+  }
+  75% {
+    background-position: 60% 90%
+  }
+  100% {
+    background-position: 50% 30%
+  }
+}
+section.barato .imagem img.computador {
+  position: absolute;
+  bottom: -125px;
+  height: 100%;
+  max-height: 400px;
+}
+section.barato .imagem .quadro {
+  position: absolute;
+  z-index: 1;
+  background-color: var(--cor-secundaria-3);
+  border: 3px solid var(--cor-primaria);
+  padding: 10px 15px;
+  border-radius: 15px 0 15px 0;
+}
+section.barato .imagem .quadro p {
+  font-family: var(--bold);
+  color: var(--cor-branco);
+  font-size: 50px;
+}
+section.barato .imagem .quadro.um {
+  top: 50px;
+  right: 500px;
+  animation: movendo 2s linear infinite;
+  animation-delay: 2s;
+}
+section.barato .imagem .quadro.dois {
+  top: 150px;
+  left: 200px;
+  animation: movendo2 2s linear infinite;
+  animation-delay: 4s;
+}
+section.barato .imagem .quadro.tres {
+  top: 200px;
+  right: 200px;
+  animation: movendo 2s linear infinite;
+  animation-delay: 3s;
+}
+@keyframes movendo {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(5deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes movendo2 {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(-5deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+/* Responsivo */
+@media screen and (max-width: 1000px) {
+  section.barato .titulo h2 {
+    font-size: 40px;
+    max-width: 600px;
+  }
+  section.barato .titulo p {
+    max-width: 500px;
+  }
+  section.barato .titulo {
+    align-items: flex-start;
+    text-align: left;
+    padding: 150px 30px 80px 30px;
+  }
+  section.barato .imagem img.computador {
+    bottom: -90px;
+    max-height: 250px;
+  }
+  section.barato .imagem .quadro p {
+    font-size: 30px;
+  }
+  section.barato .imagem .quadro.um {
+    right: 60px;
+  }
+  section.barato .imagem .quadro.dois {
+    left: 30px;
+  }
+  section.barato .imagem .quadro.tres {
+    right: 30px;
+  }
+}

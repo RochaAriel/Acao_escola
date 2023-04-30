@@ -1,0 +1,15 @@
+/* Fontes */
+@font-face {
+  font-family: 'bellotatext-bold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../../files/fonts/bellotatext-bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'staatliches-regular';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../../files/fonts/staatliches-regular.woff') format('woff');
+}

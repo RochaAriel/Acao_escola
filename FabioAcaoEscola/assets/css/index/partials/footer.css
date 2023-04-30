@@ -1,0 +1,73 @@
+/* <footer> */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  background: radial-gradient(circle at 70%,var(--cor-primaria) 10%,var(--cor-secundaria-1) 30%);
+  background-size: 400% 400%;
+  animation: mexendoBackground 15s ease-in-out infinite;
+}
+@keyframes mexendoBackground {
+  0% {
+    background-position: 50% 30%
+  }
+  25% {
+    background-position: 100% 10%
+  }
+  50% {
+    background-position: 100% 90%
+  }
+  75% {
+    background-position: 60% 90%
+  }
+  100% {
+    background-position: 50% 30%
+  }
+}
+footer .social img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 0 20px 0;
+}
+footer .copyright p {
+  font-family: var(--bold);
+  font-size: 20px;
+  color: var(--cor-branco);
+  padding-bottom: 10px;
+}
+footer .uteis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .uteis span {
+  background-color: var(--cor-primaria);
+  margin: 0 15px;
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+footer .uteis p {
+  font-family: var(--regular);
+  font-size: 15px;
+  color: var(--cor-branco);
+}
+/* Responsivo */
+@media screen and (max-width: 400px) {
+  footer {
+    padding: 100px 30px;
+  }
+  footer .social img {
+    max-width: 180px;
+  }
+  footer .uteis span {
+    margin: 0 10px;
+  }
+  footer .uteis p {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,196 @@
+/* <section class="equipe"> */
+section.equipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-secundaria-3);
+  background-image: url('../../../../files/images/background.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+/* Titulo */
+section.equipe .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+section.equipe .titulo h2 {
+  font-family: var(--bold);
+  font-size: 50px;
+  line-height: 1;
+  color: var(--cor-branco);
+}
+section.equipe .titulo h2 span {
+  color: var(--cor-primaria);
+}
+section.equipe .titulo p {
+  font-family: var(--regular);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--cor-branco);
+  padding: 20px 0 0 0;
+  width: 100%;
+  max-width: 700px;
+}
+/* Professores */
+section.equipe .professores {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1000px;
+  width: 100%;
+}
+section.equipe .professores .professor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+}
+section.equipe .professores .professor img {
+  width: 90%;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px 0 var(--cor-primaria);
+  animation: brilho 2s linear infinite;
+}
+section.equipe .professores .professor p {
+  font-family: var(--bold);
+  font-size: 1.2rem;
+  background-color: var(--cor-primaria);
+  padding: 10px 15px;
+  border-radius: 15px 0 15px 0;
+  color: var(--cor-secundaria-1);
+  margin: 20px 0 0 0;
+}
+section.equipe .professores .professor.um {
+  top: 45%;
+  left: 45%;
+}
+section.equipe .professores .professor.dois {
+  top: 10%;
+  left: 25%;
+}
+section.equipe .professores .professor.tres {
+  top: 70%;
+  left: 70%;
+}
+section.equipe .professores .professor.quatro {
+  top: 75%;
+  left: 25%;
+}
+section.equipe .professores .professor.cinco {
+  top: 5%;
+  right: 30%;
+}
+section.equipe .professores .professor.seis {
+  top: 50%;
+  left: 5%;
+}
+section.equipe .professores .professor.sete {
+  top: 20%;
+  right: 5%;
+}
+section.equipe .professores .professor.um img {
+  animation-delay: 3s;
+}
+section.equipe .professores .professor.dois img {
+  animation-delay: 5s;
+}
+section.equipe .professores .professor.tres img {
+  animation-delay: 7s;
+}
+section.equipe .professores .professor.quatro img {
+  animation-delay: 1s;
+}
+section.equipe .professores .professor.cinco img {
+  animation-delay: 4s;
+}
+section.equipe .professores .professor.seis img {
+  animation-delay: 6s;
+}
+section.equipe .professores .professor.sete img {
+  animation-delay: 8s;
+}
+@keyframes brilho {
+  0% {
+    filter: brightness(100%);
+  }
+  50% {
+    filter: brightness(150%);
+  }
+  0% {
+    filter: brightness(100%);
+  }
+}
+/* Responsivo */
+@media screen and (max-width: 1000px) {
+  section.equipe {
+    padding: 60px 30px;
+  }
+  section.equipe .titulo {
+    margin: 0 0 50px 0;
+  }
+  section.equipe .titulo h2 {
+    font-size: 30px;
+    max-width: 600px;
+  }
+  section.equipe .titulo p {
+    max-width: 600px;
+  }
+  section.equipe .professores {
+    min-height: 1700px;
+  }
+  section.equipe .professores .professor {
+    max-width: 180px;
+  }
+  section.equipe .professores .professor img {
+    width: 70%;
+  }
+  section.equipe .professores .professor p {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  section.equipe .professores .professor.um {
+    top: 0;
+    left: 30%;
+    right: 0;
+  }
+  section.equipe .professores .professor.dois {
+    top: 250px;
+    right: 30%;
+    left: 0;
+  }
+  section.equipe .professores .professor.tres {
+    top: 500px;
+    left: 30%;
+    right: 0;
+  }
+  section.equipe .professores .professor.quatro {
+    top: 750px;
+    right: 30%;
+    left: 0;
+  }
+  section.equipe .professores .professor.cinco {
+    top: 1000px;
+    left: 30%;
+    right: 0;
+  }
+  section.equipe .professores .professor.seis {
+    top: 1250px;
+    right: 30%;
+    left: 0;
+  }
+  section.equipe .professores .professor.sete {
+    top: 1500px;
+    left: 30%;
+    right: none;
+  }
+}

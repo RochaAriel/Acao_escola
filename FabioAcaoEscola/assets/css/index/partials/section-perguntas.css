@@ -1,0 +1,107 @@
+/* <section class="perguntas">*/
+
+section.perguntas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: var(--cor-secundaria-3);
+}
+/* Titulo */
+section.perguntas .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+section.perguntas .titulo h2 {
+  font-family: var(--bold);
+  font-size: 50px;
+  color: var(--cor-branco);
+}
+section.perguntas .titulo h2 span {
+  color: var(--cor-primaria);
+}
+/* Itens */
+section.perguntas .itens {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  width: calc(100% - 200px);
+  padding: 50px 0;
+  cursor: e-resize;
+}
+section.perguntas .itens:active {
+  cursor: grabbing;
+}
+/* scrollbar */
+section.perguntas .itens {
+  scrollbar-color: var(--cor-secundaria-1) var(--cor-primaria);
+  scrollbar-width: thin;
+}
+section.perguntas .itens::-webkit-scrollbar-track {
+  background-color: var(--cor-secundaria-2);
+  height: 10px;
+  border-radius: 10px;
+}
+section.perguntas .itens::-webkit-scrollbar {
+  height: 10px;
+  border-radius: 10px;
+}
+section.perguntas .itens::-webkit-scrollbar-thumb {
+  background-color: var(--cor-primaria);
+  border: 2px solid var(--cor-secundaria-2);
+  height: 10px;
+  border-radius: 10px;
+}
+/* item */
+section.perguntas .itens .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  min-width: 400px;
+  border: 2px dashed var(--cor-primaria);
+  border-radius: 15px;
+  padding: 50px 30px;
+  margin: 0 20px 0 0;
+  position: relative;
+}
+section.perguntas .itens .item h3 {
+  font-family: var(--bold);
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--cor-branco);
+  position: absolute;
+  top: -30px;
+  background-color: var(--cor-secundaria-2);
+  padding: 15px 60px 15px 15px;
+  border-radius: 15px;
+}
+section.perguntas .itens .item p {
+  font-family: var(--regular);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--cor-branco);
+}
+section.perguntas .itens .item p span {
+  color: var(--cor-primaria-1)
+}
+/* Responsivo */
+@media screen and (max-width: 550px) {
+  section.perguntas .itens {
+    width: calc(100% - 60px);
+  }
+  section.perguntas .titulo h2 {
+    font-size: 30px;
+  }
+  section.perguntas .itens .item {
+    max-width: 280px;
+    min-width: 280px;
+    padding: 50px 30px;
+    margin: 0 10px 0 0;
+  }
+}

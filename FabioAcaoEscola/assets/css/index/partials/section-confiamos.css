@@ -1,0 +1,102 @@
+/* <section class="confiamos"> */
+section.confiamos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cor-secundaria-2);
+}
+/* Titulo */
+section.confiamos .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80%;
+  padding: 100px;
+}
+section.confiamos .titulo h2 {
+  font-family: var(--bold);
+  font-size: 60px;
+  line-height: 1;
+  color: var(--cor-branco);
+  width: 100%;
+  max-width: 500px;
+}
+section.confiamos .titulo h2 span {
+  color: var(--cor-primaria);
+}
+section.confiamos .titulo p {
+  font-family: var(--regular);
+  font-size: 15px;
+  color: var(--cor-branco);
+  padding: 20px 000;
+  width: 100%;
+  max-width: 400px;
+  line-height: 1.5;
+}
+/* Itens */
+section.confiamos .itens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--cor-secundaria-4);
+}
+section.confiamos .itens .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 50%;
+  height: 100%;
+  min-height: 200px;
+  padding: 20px;
+}
+section.confiamos .itens .item.diferente {
+  background-color: var(--cor-secundaria-3);
+}
+section.confiamos .itens .item h3 {
+  font-family: var(--bold);
+  font-size: 3rem;
+  color: var(--cor-primaria);
+  text-align: center;
+  padding-bottom: 10px;
+}
+section.confiamos .itens .item.diferente h3 {
+  color: var(--cor-branco);
+}
+section.confiamos .itens .item p {
+  font-family: var(--regular);
+  font-size: 15px;
+  color: var(--cor-branco);
+  max-width: 200px;
+  text-align: center;
+}
+/* Responsivo */
+@media screen and (max-width: 1000px) {
+  section.confiamos {
+    flex-direction: column;
+  }
+  section.confiamos .titulo {
+    width: 100%;
+  }
+  section.confiamos .titulo {
+    padding: 80px 30px;
+  }
+  section.confiamos .titulo h2 {
+    font-size: 40px;
+    max-width: 400px;
+  }
+  section.confiamos .titulo p {
+    max-width: 350px;
+  }
+  section.confiamos .itens .item h3 {
+    font-size: 35px;
+  }
+  section.confiamos .itens .item p {
+    font-size: 13px;
+    max-width: 160px;
+  }
+}

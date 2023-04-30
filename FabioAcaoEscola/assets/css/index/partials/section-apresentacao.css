@@ -1,0 +1,113 @@
+/* <section class="apresentacao"/> */
+section.apresentacao {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  position: relative;
+  overflow: hidden;
+  background-image: url(/files/images/Acao-01.jpg);
+}
+/* Imagem */
+section.apresentacao .imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
+section.apresentacao .imagem img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 25px;
+}
+/* Circulo */
+section.apresentacao .circulo {
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  border: 50px solid var(--cor-primaria);
+  border-top: 50px solid var(--cor-secundaria-1);
+  box-shadow: 0 20px 50px 0 var(--cor-primaria);
+  top: -400px;
+  right: -500px;
+  animation: rodando 5s linear infinite;
+  z-index: 1;
+}
+/* Texto */
+section.apresentacao .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+}
+section.apresentacao .texto h1 {
+  font-family: var(--bold);
+  font-size: 60px;
+  line-height: 1;
+  color: var(--cor-branco);
+  width: 100%;
+  max-width: 600px;
+}
+section.apresentacao .texto h1 span {
+  color: var(--cor-primaria);
+}
+section.apresentacao .texto p {
+  font-family: var(--regular);
+  font-size: 16px;
+  color: var(--cor-branco);
+  line-height: 1.5;
+  margin: 10px 0 20px 0;
+  width: 100%;
+  max-width: 500px;
+  line-height: 1.5;
+}
+section.apresentacao .texto button {
+  font-family: var(--bold);
+  font-size: 20px;
+  color: var(--cor-branco);
+  background-color: var(--cor-secundaria-1);
+  border: 1px solid var(--cor-primaria);
+  box-shadow: 0 10px 30px 0 var(--cor-primaria);
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  list-style: none;
+}
+section.apresentacao .texto button:hover {
+  color: var(--cor-branco);
+  background-color: var(--cor-primaria);
+  box-shadow: 0 10px 20px 0 var(--cor-primaria);
+}
+/* Responsivo */
+@media screen and (max-width: 1000px) {
+  section.apresentacao {
+    flex-direction: column;
+    padding: 100px 30px 50px 30px;
+  }
+  /* Imagem */
+  section.apresentacao .imagem {
+    margin: 50px 0 0 0;
+    width: 100%;
+  }
+  section.apresentacao .imagem img {
+    width: 100%;
+    max-width: 500px;
+  }
+  /* Circulo */
+  section.apresentacao .circulo {
+    width: 800px;
+    height: 800px;
+    top: auto;
+    bottom: -600px;
+    right: -300px;
+  }
+  /* Texto */
+  section.apresentacao .texto {
+    width: 100%;
+  }
+  section.apresentacao .texto h1 {
+    font-size: 40px;
+  }
+}
