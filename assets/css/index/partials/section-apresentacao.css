@@ -5,7 +5,7 @@ section.apresentacao {
   padding: 100px;
   position: relative;
   overflow: hidden;
-  background-image: url(/files/images/Acao-01.jpg);
+  background-image: url(/files/images/loadimg.png);
 }
 /* Imagem */
 section.apresentacao .imagem {
@@ -51,12 +51,12 @@ section.apresentacao .texto h1 {
   max-width: 600px;
 }
 section.apresentacao .texto h1 span {
-  color: var(--cor-primaria);
+  color: var(--cor-secundaria-3);
 }
 section.apresentacao .texto p {
   font-family: var(--regular);
   font-size: 16px;
-  color: var(--cor-branco);
+  color: var(--cor-secundaria-4);
   line-height: 1.5;
   margin: 10px 0 20px 0;
   width: 100%;

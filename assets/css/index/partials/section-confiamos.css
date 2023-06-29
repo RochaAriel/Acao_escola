@@ -34,6 +34,9 @@ section.confiamos .titulo p {
   max-width: 400px;
   line-height: 1.5;
 }
+.destaque1{ 
+  color: var(--cor-secundaria-4);
+}
 /* Itens */
 section.confiamos .itens {
   display: flex;
@@ -41,7 +44,7 @@ section.confiamos .itens {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  background-color: var(--cor-secundaria-4);
+  background-color: var(--cor-secundaria-2);
 }
 section.confiamos .itens .item {
   display: flex;

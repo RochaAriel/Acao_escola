@@ -10,8 +10,8 @@ nav {
   height: 60px;
   min-height: 60px;
   max-height: 60px;
-  background-color: var(--cor-secundaria-1);
-  border-bottom: 1px solid var(--cor-secundaria-1);
+  background-color: var(--cor-secundaria-2);
+  border-bottom: 1px solid var(--cor-secundaria-2);
   padding: 0 100px;
   z-index: 10;
   transition: all 0.3s;

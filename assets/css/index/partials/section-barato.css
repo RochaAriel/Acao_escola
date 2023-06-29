@@ -20,7 +20,7 @@ section.barato .titulo h2 {
   max-width: 800px;
 }
 section.barato .titulo h2 span {
-  color: var(--cor-primaria);
+  color: var(--cor-secundaria-2);
 }
 section.barato .titulo p {
   font-family: var(--regular);
@@ -32,6 +32,11 @@ section.barato .titulo p {
   max-width: 600px;
   line-height: 1.5;
 }
+section.barato .titulo p span{
+  color: var(--cor-secundaria-2);
+}
+
+
 /* Imagem */
 section.barato .imagem {
   display: flex;
@@ -100,7 +105,22 @@ section.barato .imagem .quadro.tres {
   right: 200px;
   animation: movendo 2s linear infinite;
   animation-delay: 3s;
+  text-decoration: none;
+  list-style: none;
+  
 }
+
+ button {
+  font-family: var(--bold);
+  font-size: 20px;
+  color: var(--cor-branco);
+  background-color: var(--cor-secundaria-3);
+  padding: 15px 30px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  list-style: none;
+}
+
 @keyframes movendo {
   0% {
     transform: rotate(0deg);

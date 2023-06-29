@@ -1,10 +1,10 @@
 /* Personaliza a cor do scroll da página */
 html {
-  scrollbar-color: var(--cor-primaria) var(--cor-secundaria-1);
+  scrollbar-color: var(cor-secundaria-2) var(--cor-branco);
   scrollbar-width: thin;
 }
 ::-webkit-scrollbar-track {
-  background-color: var(--cor-secundaria-1);
+  background-color: var(cor-secundaria-2);
   width: 10px;
   height: 10px;
 }
@@ -13,7 +13,7 @@ html {
   height: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-branco);
   width: 10px;
   height: 10px;
   border-radius: 10px;
