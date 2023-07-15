@@ -80,7 +80,7 @@ section.depoimentos .alunos .aluno .texto p {
 section.depoimentos .alunos .aluno span {
   font-family: var(--bold);
   font-size: 25px;
-  color: var(--cor-primaria);
+  color: var(--cor-branco);
   padding: 20px 0 0 0;
 }
 /* Responsivo */
