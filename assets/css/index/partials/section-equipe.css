@@ -67,9 +67,10 @@ section.equipe .professores .professor p {
   background-color: var(--cor-primaria);
   padding: 10px 15px;
   border-radius: 15px 0 15px 0;
-  color: var(--cor-secundaria-1);
+  color: var(--cor-branco);
   margin: 20px 0 0 0;
 }
+
 section.equipe .professores .professor.um {
   top: 45%;
   left: 45%;
@@ -82,22 +83,7 @@ section.equipe .professores .professor.tres {
   top: 70%;
   left: 70%;
 }
-section.equipe .professores .professor.quatro {
-  top: 75%;
-  left: 25%;
-}
-section.equipe .professores .professor.cinco {
-  top: 5%;
-  right: 30%;
-}
-section.equipe .professores .professor.seis {
-  top: 50%;
-  left: 5%;
-}
-section.equipe .professores .professor.sete {
-  top: 20%;
-  right: 5%;
-}
+
 section.equipe .professores .professor.um img {
   animation-delay: 3s;
 }
@@ -107,17 +93,14 @@ section.equipe .professores .professor.dois img {
 section.equipe .professores .professor.tres img {
   animation-delay: 7s;
 }
-section.equipe .professores .professor.quatro img {
-  animation-delay: 1s;
-}
-section.equipe .professores .professor.cinco img {
-  animation-delay: 4s;
-}
-section.equipe .professores .professor.seis img {
-  animation-delay: 6s;
-}
-section.equipe .professores .professor.sete img {
-  animation-delay: 8s;
+/* botao de acao */
+section.equipe div.call{
+  font-family: var(--bold);
+  color: var(--cor-primaria);
+  background-color: var(--cor-branco);
+  box-shadow: 0 10px 30px 0 var(--cor-primaria);
+  padding: 10px 25px;
+  border-radius: 10px;
 }
 @keyframes brilho {
   0% {
@@ -193,4 +176,5 @@ section.equipe .professores .professor.sete img {
     left: 30%;
     right: none;
   }
+ 
 }
