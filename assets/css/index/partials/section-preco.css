@@ -130,17 +130,17 @@ section.preco .quadros .quadro.um h2 span {
   color: var(--cor-primaria);
 }
 section.preco .quadros .quadro.um button {
-  background-color: var(--cor-secundaria-4);
+  background-color: var(--cor-secundaria-3);
   color: var(--cor-primaria);
   box-shadow: 0 10px 30px 0 var(--cor-secundaria-3);
   border: 2px solid var(--cor-secundaria-4);
 }
 section.preco .quadros .quadro.um button:hover {
-  border: 2px solid var(--cor-primaria);
+  border: 2px solid var(--cor-branco);
 }
 /* Dois */
 section.preco .quadros .quadro.dois {
-  background-color: var(--cor-secundaria-3);
+  background-color: var(--cor-secundaria-2);
   margin: 0 20px;
 }
 section.preco .quadros .quadro.dois h3 {
