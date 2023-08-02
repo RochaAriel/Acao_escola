@@ -21,8 +21,8 @@ body.carregando {
   pointer-events: none;
 }
 .loading svg {
-  width: 20%;
-  max-width: 250px;
+  width: 100%;
+  max-width: 500px;
 }
 .loading svg path {
   fill: var(--cor-secundaria-2);

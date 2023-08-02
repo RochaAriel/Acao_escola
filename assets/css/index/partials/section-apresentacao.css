@@ -5,7 +5,7 @@ section.apresentacao {
   padding: 100px;
   position: relative;
   overflow: hidden;
-  background-image: url(/files/images/loadimg.png);
+  background-image: url(/files/images/);
 }
 /* Imagem */
 section.apresentacao .imagem {
@@ -56,7 +56,7 @@ section.apresentacao .texto h1 span {
 section.apresentacao .texto p {
   font-family: var(--regular);
   font-size: 16px;
-  color: var(--cor-secundaria-4);
+  color: var(--cor-branco);
   line-height: 1.5;
   margin: 10px 0 20px 0;
   width: 100%;
